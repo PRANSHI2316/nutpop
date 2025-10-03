@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nutpop – Healthy Protein Almonds Mix</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- Navigation -->
+<nav>
+  <div class="logo">
+    <img src="builder.jpg" alt="Nutpop Bodybuilder Logo" />
+    <span>Nutpop</span>
+  </div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#products">Product</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <!-- Home Section -->
+  <section id="home">
+    <div class="homepage-flex">
+      <div class="founder-photo">
+        <img src="akshat.jpg" alt="Akshat Agrawal, Founder of Nutpop" />
+      </div>
+      <div class="founder-desc">
+        <h1>Welcome to Nutpop</h1>
+        <p>Nutpop is your destination for healthy, protein-rich almond mixes – tasty, nutritious, and made affordable for all.</p>
+        <h3>About Akshat Agrawal</h3>
+        <p>Akshat Agrawal, the founder of Nutpop, promotes a healthy lifestyle through innovative food solutions. His journey showcases vision, determination, and passion for nutritious living.</p>
+      </div>
+      <div class="founder-video">
+        <video controls autoplay muted loop>
+          <source src="WhatsApp Video 2025-10-02 at 12.41.59_fcbab4d2.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <div class="achievements">
+      <div class="achievement-card">
+        <img src="kureshi.jpg" alt="Startup India Finalist" />
+        <i class="fas fa-medal"></i>
+        <h3>Startup India Finalist</h3>
+        <p>Recognized for innovation in healthy snacks.</p>
+      </div>
+      <div class="achievement-card">
+        <img src="chachi.jpg" alt="Health Industry Innovator" />
+        <i class="fas fa-seedling"></i>
+        <h3>Health Industry Innovator</h3>
+        <p>Developed beloved protein almonds mix.</p>
+      </div>
+      <div class="achievement-card">
+        <img src="achivementttt.jpg" alt="Young Entrepreneur Award" />
+        <i class="fas fa-user-tie"></i>
+        <h3>Young Entrepreneur Award</h3>
+        <p>Honored for entrepreneurship and growth.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products">
+    <h2>Nutpop Protein Almonds Mix</h2>
+    <div class="product-card">
+      <div class="product-left">
+        <img src="nutpop.jpg" alt="Nutpop Protein Almonds Mix" class="product-image"/>
+        <div class="product-info">
+          <div class="product-title">Protein Almonds Mix</div>
+          <div class="price">₹20</div>
+          <ul>
+            <li>Rich in protein</li>
+            <li>Premium hand-selected almonds</li>
+            <li>Fresh and energy-boosting</li>
+            <li>Guilt-free anytime snack</li>
+          </ul>
+          <button class="buy-btn" id="orderBtn">Order Now</button>
+        </div>
+      </div>
+      <div class="product-right">
+        <video class="product-video" autoplay loop controls>
+    <source src="nutpopp.mp3.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+</video>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Nutpop</h2>
+    <form class="contact-form" id="contactForm" onsubmit="return sendContactEmail(event)">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="address" placeholder="Your Address" required />
+      <textarea rows="4" name="message" placeholder="Order Detail" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</div>
+
+<footer>
+  &copy; 2025 Nutpop | Healthy Protein Almonds Mix by Akshat Agrawal
+</footer>
+
+<!-- Modal for Order Info -->
+<div id="orderModal" class="modal">
+  <div class="modal-content order-modal-content">
+    <span class="close" id="orderModalClose">&times;</span>
+    <div class="order-info-columns">
+      <div class="order-left">
+        <h3>Purchase from Home</h3>
+        <p>If you purchase the packet from home, the address of home is <strong>Shri jagdish saraf,Ramcharit Manas Bhavan ke peeche, galla mandi (ward no. 9),Chhatarpur (M.P),471001</strong>.</p>
+        <p>For contact, call <strong>6264323874, 9399747427</strong>.</p>
+      </div>
+      <div class="order-right">
+        <h3>Delivery Information</h3>
+        <p>For delivery to your home:</p>
+        <ul>
+          <li>If you purchase only 1 packet, delivery charge is ₹10.</li>
+          <li>Minimum 2 packets purchase for free delivery.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Confirmation -->
+<div id="confirmModal" class="modal">
+  <div class="modal-content confirm-modal-content">
+    <span class="close" id="confirmModalClose">&times;</span>
+    <h2>Thank you for your message!</h2>
+    <p>Your request has been sent successfully. Priti Agrawal will confirm your order soon.</p>
+    <button id="confirmOkBtn">OK</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
